@@ -29,7 +29,11 @@ document.querySelector(`.check`).addEventListener(`click`, function () {
       document.querySelector(
         `.message`
       ).textContent = `You lost press the Again! button to retry`;
-      //document.querySelector(`.check`).addEventListener(`click`, function () {});
+      document.querySelector(`.check`).addEventListener(`click`, function () {
+        document.querySelector(
+          `.message`
+        ).textContent = `Better luck next time`;
+      });
       document.querySelector(`.label-score`).textContent = `💔 Lives: 0 `;
     }
   } else if (secretNumber < answer) {
@@ -42,6 +46,11 @@ document.querySelector(`.check`).addEventListener(`click`, function () {
       document.querySelector(
         `.message`
       ).textContent = `You lost press the Again! button to retry`;
+      document.querySelector(`.check`).addEventListener(`click`, function () {
+        document.querySelector(
+          `.message`
+        ).textContent = `Better luck next time`;
+      });
     }
   }
 });
